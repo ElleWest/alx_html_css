@@ -16,11 +16,13 @@ alx_html_css/
 ## Tasks Completed
 
 ### Task 0: Some early styling
+
 - Created `css_basic` directory with required files
 - Added CSS links to HTML files
 - Implemented base styling
 
 ### Task 1: Positioning
+
 - Implemented CSS Flexbox layout
 - Body: `display: flex`, `flex-direction: column`
 - Main: `display: flex`, `flex-direction: row`, `flex: auto`
@@ -29,11 +31,13 @@ alx_html_css/
 - Added `overflow-y: auto` to article and aside
 
 ### Task 2: Responsive web design
+
 - Added `class="works_on_smartphone"` to body tags
 - Added viewport meta tag for mobile responsiveness
 - Implemented responsive CSS in base.css
 
 ### Task 3: Some more styling
+
 - Added logo (🏠) with proper styling
 - Enhanced colors, backgrounds, and borders
 - Improved typography and spacing

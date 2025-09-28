@@ -5,6 +5,7 @@ This project focuses on advanced CSS styling for a SmileSchool website, implemen
 ## Project Overview
 
 This is a comprehensive CSS project that demonstrates advanced styling techniques including:
+
 - Complex layouts with Flexbox and Grid
 - Responsive design principles
 - Typography and color systems
@@ -24,17 +25,20 @@ css_advanced/
 ## Features Implemented
 
 ### 🎨 Design System
+
 - **Typography**: Source Sans Pro and Spin Cycle OT fonts
 - **Color Palette**: Based on Figma design specifications
 - **Spacing**: Consistent margin and padding system
 - **Components**: Reusable UI components
 
 ### 📱 Responsive Design
+
 - Mobile-first approach
 - Flexible layouts that adapt to different screen sizes
 - Optimized typography scaling
 
 ### 🏗️ Layout Sections
+
 1. **Header & Banner** - Hero section with navigation and call-to-action
 2. **Quotes** - Testimonial section with professional styling
 3. **Videos List** - Grid layout for tutorial videos
@@ -45,6 +49,7 @@ css_advanced/
 ## Technical Implementation
 
 ### CSS Features Used
+
 - **Flexbox** for flexible layouts
 - **CSS Grid** for complex grid systems
 - **Custom Properties** (CSS Variables) for consistent theming
@@ -53,6 +58,7 @@ css_advanced/
 - **Transform and Transition** for smooth interactions
 
 ### Browser Compatibility
+
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Progressive enhancement approach
 - Graceful degradation for older browsers
@@ -60,12 +66,14 @@ css_advanced/
 ## Getting Started
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/ElleWest/alx_html_css.git
    cd alx_html_css/css_advanced
    ```
 
 2. **Open in browser**:
+
    - Simply open `index.html` in your web browser
    - Or use a local server for development
 
@@ -77,6 +85,7 @@ css_advanced/
 ## Design Specifications
 
 This project follows the design specifications from the provided Figma file:
+
 - All measurements are converted from Figma values
 - Colors match the design system exactly
 - Typography scales according to design specifications
@@ -85,12 +94,14 @@ This project follows the design specifications from the provided Figma file:
 ## File Structure Details
 
 ### index.html
+
 - Semantic HTML5 structure
 - Accessibility-focused markup
 - Font Awesome icons integration
 - External image references (fakeimg.pl for placeholders)
 
 ### styles.css
+
 - Modular CSS organization
 - Component-based styling approach
 - Mobile-first responsive design
@@ -112,4 +123,4 @@ This project is part of the ALX curriculum and is for educational purposes.
 
 ---
 
-*Built with ❤️ and advanced CSS techniques*
+_Built with ❤️ and advanced CSS techniques_
