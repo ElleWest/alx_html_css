@@ -1,483 +1,879 @@
-/* CSS Advanced Project - SmileSchool */
+/* CSS Advanced Project - SmileSchool (Figma Design) */
 
-/* CSS Reset and Base Styles */
 * {
-  margin: 0;
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  line-height: 1.6;
-  color: #071629;
-  background-color: #ffffff;
+  margin: 0px;
+  height: 100%;
 }
 
-/* Typography */
-h1 {
-  font-family: "Spin Cycle OT", Arial, sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 1rem;
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
 }
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #071629;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #071629;
-  margin-bottom: 0.5rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #071629;
-}
-
-p {
-  font-size: 1rem;
-  color: #071629;
-  margin-bottom: 1rem;
-}
-
-/* Header Styles */
-header {
-  background-color: #071629;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-nav img {
-  height: 40px;
-  width: auto;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-nav ul li a {
-  color: #ffffff;
+a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #c271ff;
+.school-page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 3718px;
+  position: relative;
 }
 
-/* Main Hero Section */
-main > section:first-child {
-  background: linear-gradient(45deg, #c271ff, #d299c2);
-  padding: 4rem 0;
+.school-page .part-footer {
+  position: absolute;
+  top: 3469px;
+  left: 0;
+  width: 1440px;
+  height: 249px;
+  overflow: hidden;
+}
+
+.school-page .background {
+  position: absolute;
+  width: 100.14%;
+  height: 100.8%;
+  top: 0;
+  left: 0;
+  background-color: #071629;
+}
+
+.school-page .logo {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  top: 38.15%;
+  left: 11.46%;
+}
+
+.school-page .text-wrapper {
+  position: absolute;
+  width: 67.46%;
+  top: calc(50% - 9px);
+  left: 32.54%;
+  font-family: "Coiny", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.school-page .smile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.school-page .div {
+  position: absolute;
+  width: 6.67%;
+  top: calc(50% + 70px);
+  left: 46.67%;
+  opacity: 0.35;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .social-icons {
+  position: absolute;
+  top: 90px;
+  left: 1070px;
+  width: 130px;
+  height: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.school-page .img {
+  width: 30px;
+  height: 30px;
+}
+
+.school-page .part-FAQ {
+  position: absolute;
+  top: 2678px;
+  left: 249px;
+  width: 920px;
+  height: 707px;
+}
+
+.school-page .text-wrapper-2 {
+  position: absolute;
+  width: 14.78%;
+  top: calc(50% - 354px);
+  left: 44.24%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 300;
+  color: #071629;
+  font-size: 60px;
   text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .q {
+  position: absolute;
+  width: 38.04%;
+  height: 34.23%;
+  top: 21.07%;
+  left: 0;
+}
+
+.school-page .lorem-ipsum-dolor-si {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 71px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #07162980;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.school-page .text-wrapper-3 {
+  position: absolute;
+  width: 41.43%;
+  top: calc(50% - 121px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .q-2 {
+  position: absolute;
+  width: 38.04%;
+  height: 34.23%;
+  top: 65.77%;
+  left: 0;
+}
+
+.school-page .q-3 {
+  position: absolute;
+  width: 38.04%;
+  height: 34.23%;
+  top: 21.07%;
+  left: 61.96%;
+}
+
+.school-page .q-4 {
+  position: absolute;
+  width: 38.04%;
+  height: 34.23%;
+  top: 65.77%;
+  left: 61.96%;
+}
+
+.school-page .part-free {
+  position: absolute;
+  top: 2109px;
+  left: 0;
+  width: 1440px;
+  height: 502px;
+  background-color: #071629;
+}
+
+.school-page .free-membership {
+  position: absolute;
+  width: 16.25%;
+  top: calc(50% - 181px);
+  left: 42.85%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.school-page .span {
+  font-weight: 700;
+  color: #c170ff;
+}
+
+.school-page .text-wrapper-4 {
+  font-weight: 700;
   color: #ffffff;
 }
 
-main > section:first-child > div:first-child {
-  margin-bottom: 4rem;
+.school-page .text-wrapper-5 {
+  font-weight: 300;
+  color: #ffffff;
 }
 
-main > section:first-child span {
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+.school-page .button {
+  position: absolute;
+  width: 11.25%;
+  height: 8.76%;
+  top: 80.88%;
+  left: 44.38%;
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #00000080;
 }
 
-main > section:first-child button {
+.school-page .button-background {
+  position: absolute;
+  width: 101.23%;
+  height: 104.55%;
+  top: -2.27%;
+  left: 0;
+  background-color: #c170ff;
+  border-radius: 22px;
+}
+
+.school-page .text-wrapper-6 {
+  position: absolute;
+  width: 74.69%;
+  top: calc(50% - 9px);
+  left: 13.27%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .dot {
+  position: absolute;
+  width: 17.85%;
+  height: 30.48%;
+  top: 33.47%;
+  left: 11.39%;
+}
+
+.school-page .p {
+  width: 82.49%;
+  top: calc(50% + 24px);
+  left: 8.75%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  position: absolute;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.school-page .text-wrapper-7 {
+  position: absolute;
+  width: 99.61%;
+  top: calc(50% - 14px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.school-page .smile-2 {
+  position: absolute;
+  top: 1px;
+  left: 107px;
+  width: 44px;
+  height: 35px;
+}
+
+.school-page .dot-2 {
+  position: absolute;
+  width: 17.85%;
+  height: 30.48%;
+  top: 33.47%;
+  left: 31.11%;
+}
+
+.school-page .lorem-ipsum-dolor-si-2 {
+  width: 85.99%;
+  top: calc(50% + 24px);
+  left: 7%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  position: absolute;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.school-page .dot-3 {
+  position: absolute;
+  width: 17.85%;
+  height: 30.48%;
+  top: 33.47%;
+  left: 50.9%;
+}
+
+.school-page .lorem-ipsum-dolor-si-3 {
+  width: 83.66%;
+  top: calc(50% + 24px);
+  left: 8.17%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  position: absolute;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.school-page .dot-4 {
+  position: absolute;
+  width: 17.85%;
+  height: 30.48%;
+  top: 33.47%;
+  left: 70.76%;
+}
+
+.school-page .part-tutorials {
+  position: absolute;
+  top: 1572px;
+  left: 106px;
+  width: 1228px;
+  height: 450px;
+}
+
+.school-page .most-popular-tutoria {
+  position: absolute;
+  width: 23.94%;
+  top: calc(50% - 225px);
+  left: 39.25%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .text-wrapper-8 {
+  font-weight: 300;
+  color: #071629;
+}
+
+.school-page .tuto {
+  position: absolute;
+  width: 20.77%;
+  height: 74.44%;
+  top: 25.56%;
+  left: 4.72%;
+  overflow: hidden;
+}
+
+.school-page .background-2 {
+  position: absolute;
+  width: 100.78%;
+  height: 100.6%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #0716292d;
+}
+
+.school-page .avatar {
+  position: absolute;
+  top: 261px;
+  left: 13px;
+  width: 30px;
+  height: 30px;
+}
+
+.school-page .text-wrapper-9 {
+  position: absolute;
+  width: 33.73%;
+  top: calc(50% + 96px);
+  left: 21.96%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #c170ff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.school-page .text-wrapper-10 {
+  position: absolute;
+  width: 13.33%;
+  top: calc(50% + 130px);
+  left: 78.04%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #c170ff;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.school-page .rating {
+  position: absolute;
+  top: 305px;
+  left: 13px;
+  width: 107px;
+  height: 15px;
+}
+
+.school-page .lorem-ipsum-dolor-si-4 {
+  width: 94.9%;
+  top: calc(50% + 32px);
+  left: 5.1%;
+  color: #07162980;
+  line-height: 24px;
+  position: absolute;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.school-page .text-wrapper-11 {
+  position: absolute;
+  width: 41.57%;
+  top: calc(50% + 4px);
+  left: 5.1%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 154px;
+}
+
+.school-page .play {
+  position: absolute;
+  top: 45px;
+  left: 96px;
+  width: 64px;
+  height: 64px;
+}
+
+.school-page .tuto-2 {
+  position: absolute;
+  width: 20.77%;
+  height: 74.44%;
+  top: 25.56%;
+  left: 28.01%;
+  overflow: hidden;
+}
+
+.school-page .text-wrapper-12 {
+  position: absolute;
+  width: 27.45%;
+  top: calc(50% + 4px);
+  left: 5.1%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .tuto-3 {
+  position: absolute;
+  width: 20.77%;
+  height: 74.44%;
+  top: 25.56%;
+  left: 51.22%;
+  overflow: hidden;
+}
+
+.school-page .text-wrapper-13 {
+  position: absolute;
+  width: 38.04%;
+  top: calc(50% + 4px);
+  left: 5.1%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .tuto-4 {
+  position: absolute;
+  width: 20.77%;
+  height: 74.44%;
+  top: 25.56%;
+  left: 74.43%;
+  overflow: hidden;
+}
+
+.school-page .text-wrapper-14 {
+  position: absolute;
+  width: 34.9%;
+  top: calc(50% + 4px);
+  left: 5.1%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .part-testimonials {
+  position: absolute;
+  top: 1093px;
+  left: -1px;
+  width: 1440px;
+  height: 392px;
+  display: flex;
   background-color: #c271ff;
+}
+
+.school-page .testimonial {
+  margin-top: 108px;
+  width: 943px;
+  margin-left: 260px;
+  display: flex;
+  gap: 53px;
+}
+
+.school-page .avatar-2 {
+  width: 160px;
+  height: 160px;
+}
+
+.school-page .text {
+  margin-top: 2px;
+  width: 730px;
+  height: 158px;
+  position: relative;
+}
+
+.school-page .text-wrapper-15 {
+  position: absolute;
+  width: 22.6%;
+  top: calc(50% + 45px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-style: italic;
   color: #ffffff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 33.6px;
+  white-space: nowrap;
 }
 
-main > section:first-child button:hover {
-  background-color: #a55ee0;
+.school-page .text-wrapper-16 {
+  position: absolute;
+  width: 17.67%;
+  top: calc(50% + 11px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 33.6px;
+  white-space: nowrap;
 }
 
-/* Pros Section */
-main > section:first-child > div:last-child {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.school-page .those-tutorials-ar {
+  position: absolute;
+  width: 100%;
+  height: 43.04%;
+  top: 0;
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 33.6px;
 }
 
-main > section:first-child > div:last-child > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.school-page .main-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1093px;
+  background-image: url("./Images_advancedCSS/Object.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main > section:first-child > div:last-child > div > div {
+.school-page .text-wrapper-17 {
+  position: absolute;
+  width: 47.5%;
+  top: calc(50% - 326px);
+  left: 26.18%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 120px;
   text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-main > section:first-child > div:last-child > div > div img {
+.school-page .text-wrapper-18 {
+  position: absolute;
+  width: 3.61%;
+  top: calc(50% - 186px);
+  left: 41.18%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .text-wrapper-19 {
+  position: absolute;
+  width: 2.5%;
+  top: calc(50% - 186px);
+  left: 48.89%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .text-wrapper-20 {
+  position: absolute;
+  width: 3.4%;
+  top: calc(50% - 186px);
+  left: 55.35%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .button-2 {
+  position: absolute;
+  width: 11.25%;
+  height: 4.03%;
+  top: 38.33%;
+  left: 44.38%;
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #00000080;
+  border-radius: 22px;
+}
+
+.school-page .text-wrapper-21 {
+  position: absolute;
+  width: 74.69%;
+  top: calc(50% - 9px);
+  left: 12.35%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.school-page .learn-from-the-pros {
+  position: absolute;
+  width: 18.12%;
+  top: calc(50% + 84px);
+  left: 41.94%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.school-page .pros {
+  position: absolute;
+  top: 758px;
+  left: 217px;
+  width: 1009px;
+  height: 237px;
+}
+
+.school-page .pro {
+  position: absolute;
+  width: 14.87%;
+  height: 100%;
+  top: 0;
+  left: 85.13%;
+}
+
+.school-page .text-wrapper-22 {
+  position: absolute;
+  width: 100%;
+  top: calc(50% + 42px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.school-page .text-wrapper-23 {
+  position: absolute;
+  width: 100%;
+  top: calc(50% + 70px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.school-page .avatar-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
 }
 
-main > section:first-child > div:last-child > div > div h3 {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
+.school-page .pro-2 {
+  position: absolute;
+  width: 14.87%;
+  height: 100%;
+  top: 0;
+  left: 56.49%;
 }
 
-main > section:first-child > div:last-child > div > div p {
-  color: #ffffff;
-  opacity: 0.9;
+.school-page .pro-3 {
+  position: absolute;
+  width: 14.87%;
+  height: 100%;
+  top: 0;
+  left: 28.64%;
 }
 
-/* Quote Section */
-main > section:nth-child(2) {
-  background-color: #c271ff;
-  padding: 4rem 0;
+.school-page .pro-4 {
+  position: absolute;
+  width: 14.87%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.school-page .header {
+  position: absolute;
+  top: 35px;
+  left: 172px;
+  width: 1103px;
+  height: 29px;
   display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
+  gap: 702.4px;
+  background-color: transparent;
 }
 
-main > section:nth-child(2) > div:first-child {
-  flex: 1;
-  margin-right: 3rem;
+.school-page .logo-2 {
+  width: 167.02px;
+  height: 29.46px;
 }
 
-main > section:nth-child(2) > div:first-child img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.school-page .menu {
+  margin-top: 2px;
+  width: 234px;
+  height: 15px;
+  position: relative;
 }
 
-main > section:nth-child(2) > div:last-child {
-  flex: 1;
+.school-page .text-wrapper-24 {
+  position: absolute;
+  width: 21.37%;
+  top: calc(50% - 8px);
+  left: 0;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
   color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-main > section:nth-child(2) blockquote {
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-bottom: 2rem;
-  line-height: 1.8;
-}
-
-main > section:nth-child(2) h3 {
+.school-page .text-wrapper-25 {
+  position: absolute;
+  width: 19.23%;
+  top: calc(50% - 8px);
+  left: 43.59%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
   color: #ffffff;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-main > section:nth-child(2) p {
+.school-page .text-wrapper-26 {
+  position: absolute;
+  width: 14.53%;
+  top: calc(50% - 8px);
+  left: 85.47%;
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
   color: #ffffff;
-  opacity: 0.9;
-}
-
-/* Videos Section */
-main > section:nth-child(3) {
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-main > section:nth-child(3) > div:not(:first-child) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div {
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div:hover {
-  transform: translateY(-5px);
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div img:first-child {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div > div:nth-child(3) {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-main
-  > section:nth-child(3)
-  > div:not(:first-child)
-  > div
-  > div:nth-child(3)
-  img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div > div:nth-child(4) {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div > div:nth-child(4) i {
-  color: #c271ff;
-  font-size: 1.2rem;
-}
-
-main > section:nth-child(3) > div:not(:first-child) > div > div:last-child {
-  padding: 0 1rem 1rem;
-}
-
-/* Membership Section */
-main > section:nth-child(4) {
-  background-color: #071629;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-main > section:nth-child(4) h2 {
-  color: #ffffff;
-  margin-bottom: 3rem;
-}
-
-main > section:nth-child(4) > div:not(:last-child) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto 3rem;
-}
-
-main > section:nth-child(4) > div:not(:last-child) > div {
-  color: #ffffff;
-  text-align: center;
-}
-
-main > section:nth-child(4) > div:not(:last-child) > div img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-main > section:nth-child(4) > div:not(:last-child) > div h3 {
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-main > section:nth-child(4) > div:not(:last-child) > div p {
-  color: #ffffff;
-  opacity: 0.9;
-}
-
-main > section:nth-child(4) button {
-  background-color: #c271ff;
-  color: #ffffff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-main > section:nth-child(4) button:hover {
-  background-color: #a55ee0;
-}
-
-/* FAQ Section */
-main > section:nth-child(5) {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-main > section:nth-child(5) > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-}
-
-main > section:nth-child(5) > div > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-main > section:nth-child(5) > div > div > div {
-  background-color: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border-left: 4px solid #c271ff;
-}
-
-main > section:nth-child(5) > div > div > div h3 {
-  margin-bottom: 1rem;
-  color: #071629;
-}
-
-main > section:nth-child(5) > div > div > div p {
-  color: #071629;
-  opacity: 0.8;
-}
-
-/* Footer */
-footer {
-  background-color: #071629;
-  padding: 2rem;
-  text-align: center;
-  color: #ffffff;
-}
-
-footer > section > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto 2rem;
-}
-
-footer img {
-  height: 40px;
-  width: auto;
-}
-
-footer > section > div:first-child > div:last-child {
-  display: flex;
-  gap: 1rem;
-}
-
-footer > section > div:first-child > div:last-child i {
-  font-size: 1.5rem;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-footer > section > div:first-child > div:last-child i:hover {
-  color: #c271ff;
-}
-
-footer p {
-  color: #ffffff;
-  opacity: 0.8;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  nav ul {
-    gap: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  main > section:first-child > div:first-child span {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  main > section:nth-child(2) {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  main > section:nth-child(2) > div:first-child {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  main > section:nth-child(3) > div:not(:first-child) {
-    grid-template-columns: 1fr;
-  }
-
-  main > section:nth-child(4) > div:not(:last-child) {
-    grid-template-columns: 1fr;
-  }
-
-  main > section:nth-child(5) > div {
-    grid-template-columns: 1fr;
-  }
-
-  footer > section > div:first-child {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  main > section:first-child {
-    padding: 2rem 1rem;
-  }
-
-  main > section:nth-child(2),
-  main > section:nth-child(3),
-  main > section:nth-child(4),
-  main > section:nth-child(5) {
-    padding: 2rem 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
 }
