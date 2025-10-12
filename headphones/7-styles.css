@@ -1,9 +1,0 @@
-/* ...existing code from 6-styles.css... */
-.animated {
-  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-}
-.animated:hover {
-  transform: scale(1.07) rotate(-2deg);
-  box-shadow: 0 8px 24px rgba(255,101,101,0.15);
-  opacity: 0.95;
-}
